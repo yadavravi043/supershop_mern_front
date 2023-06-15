@@ -1,0 +1,63 @@
+.container_x {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: auto;
+  transition: all .5s ease-in-out;
+
+}
+.orderSuccess{
+    justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 50vw;
+  height: 50vh;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, 0.192);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.orderSuccess > svg {
+  font-size: 7vmax;
+  color: rgb(76, 189, 20);
+}
+.orderSuccess > p {
+  font-size: 2vmax;
+}
+.orderSuccess > a {
+  background-color: rgb(19 92 183);
+  color: white;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font: 400 1vmax "Roboto";
+  text-decoration: none;
+  margin: 2vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .orderSuccess > a {
+    padding: 3vw 6vw;
+    font: 400 4vw "Roboto";
+    margin: 2vmax;
+  }
+
+  .orderSuccess > svg {
+    font-size: 20vw;
+  }
+  .orderSuccess > p {
+    margin: 2vmax;
+    font-size: 5vw;
+  }
+}

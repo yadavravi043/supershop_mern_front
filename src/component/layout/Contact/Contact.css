@@ -1,0 +1,66 @@
+.contact {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  position: fixed;
+}
+
+.contactGradient {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(78, 140, 255),
+    rgb(84, 189, 74)
+  );
+}
+.contactContainer {
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 50vw;
+  height: 50vh;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactContainer > h1 {
+  font: 400 3vmax "Roboto";
+  color: rgb(189, 21, 223);
+  margin: 2vmax;
+}
+
+.contactContainer>div>div>a{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(68, 65, 65, 0.938);
+  text-decoration: none;
+
+}
+.contactContainer>div>div>a:hover{
+  color:violet;
+}
+
+.leftdiv{
+  float: left;
+}
+.rightdiv{
+  float: right;
+}
+.llmail{
+  color: tomato;
+  
+}
+
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
+  }
+}
